@@ -1,0 +1,45 @@
+.parallax, .parallax-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* Set a specific height */
+  height: 450px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax {
+  /* The image used */
+  background-image: linear-gradient(to bottom right, rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url("parallax.jpg");
+}
+.parallax-2 {
+  /* The image used */
+  background-image: linear-gradient(to bottom right, rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url("parallax-2.jpg");
+}
+.parallax-content {
+  color: $white;
+  text-shadow: 1px 0px 3px rgba(0,0,0,0.3);
+
+  h2 {
+    font-size: 4.375rem;
+    letter-spacing: 10px;
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+  }
+}
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+  .parallax, .parallax-2 {
+      background-attachment: scroll;
+  }
+}

@@ -1,0 +1,83 @@
+// ABOUT SCROLLING UP
+.scroll-center {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  &:hover, &:active, &:focus, &:visited {
+    text-decoration: none;
+  }
+
+  i {
+    color: $dark-blue;
+    font-size: 72px;
+    font-weight: 300;
+  }
+
+  p {
+    color: $dark-blue;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  // Floating effect bit
+  transform: translatey(0px);
+  animation: float 1.5s ease-in-out infinite;
+}
+// Floatin Effect (SASS)
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+// PROJECTS SCROLL UP
+.cd-top {
+  display: inline-block;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  visibility: hidden;
+  opacity: 0;
+
+  border-radius: 50px;
+  color: $dark-blue;
+  font-size: 56px;
+
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+
+  &.cd-is-visible, &.cd-fade-out, {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+  }
+
+  &.cd-is-visible { /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.cd-fade-out { /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5;
+  }
+
+  &:hover {
+    color: $darker-grey;
+  }
+  &:focus, &:visited, &:active {
+    color: $dark-blue;
+  }
+}

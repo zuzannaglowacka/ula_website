@@ -1,0 +1,51 @@
+body {
+  background-color: $white;
+}
+.about-content {
+  background: white;
+  padding: 60px;
+  width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+}
+.about-flex-item {
+  flex: 0 0 48%;
+  margin: 30px 0;
+}
+.card-btns {
+  display: flex;
+  justify-content: space-between;
+}
+// btn display ONLY
+// for style, see btn partial !
+.one-third {
+  width: 33%;
+  float: left;
+  padding: 20px 15px;
+}
+.about-footer {
+  // height: 150px;
+  width: 100%;
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: center;
+
+  .row {
+    margin: 0;
+  }
+}
+.margin-down {
+  margin-bottom: 30px;
+}
+.built-with-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  color: $darker-grey;
+  margin: 40px 0 20px 0;
+}
+.techs-icons {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: $dark-blue;
+}
