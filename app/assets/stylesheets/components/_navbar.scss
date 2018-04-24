@@ -28,10 +28,17 @@
   padding: 0 20px;
 }
 
-/* Navbar link */
-.navbar-wagon-link {
-  color: #616668;
-  font-size: 14px;
+.nav-link {
+  color: $dark-blue;
+  font-size: 1rem;
+  text-decoration: none;
+  text-shadow: 1px 0 3px rgba(255,255,255,0.3);
+  letter-spacing: 0.8px;
+
+  &:link, &:hover, &:active, &:visited, &:focus {
+    text-decoration: none;
+    color: $dark-blue;
+  }
 }
 .navbar-wagon-link:hover {
   color: #da552f;
