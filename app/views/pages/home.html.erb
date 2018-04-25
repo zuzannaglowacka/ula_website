@@ -1,7 +1,9 @@
 <div class="wrapper">
   <div class="parent">
-    <div class="child left" style='background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.2)), url(<%= image_path 'realization.jpg' %>)'>
-      <h1 class="caption">View my website</h1></div>
+    <%= link_to about_path do %>
+      <div class="child left" style='background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.2)), url(<%= image_path 'realization.jpg' %>)'>
+        <h1 class="caption">View my website</h1></div>
+    <% end %>
   </div>
 
   <div class="parent">

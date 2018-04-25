@@ -8,8 +8,13 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
     <%= link_to about_path, class: 'navbar-wagon-item nav-link hvr-underline-from-center' do %>
       <p>ABOUT</p>
+      <% end %>
+    <%= link_to projects_path, class: 'navbar-wagon-item nav-link hvr-underline-from-center' do %>
+      <p>PROJECTS</p>
     <% end %>
-
+    <%= link_to pages_contact_path, class: 'navbar-wagon-item nav-link hvr-underline-from-center' do %>
+      <p>CONTACT</p>
+    <% end %>
 
     <!-- Profile picture with dropdown list -->
     <div class="navbar-wagon-item">
@@ -31,6 +36,16 @@
         <li>
           <%= link_to about_path, class: 'navbar-wagon-item nav-link' do %>
             <i class="fa fa-info-circle" aria-hidden="true"></i> About
+          <% end %>
+        </li>
+        <li>
+          <%= link_to projects_path, class: 'navbar-wagon-item nav-link' do %>
+            <i class="fa fa-picture-o" aria-hidden="true"></i> Projects
+          <% end %>
+        </li>
+        <li>
+          <%= link_to pages_contact_path, class: 'navbar-wagon-item nav-link' do %>
+            <i class="fa fa-picture-o" aria-hidden="true"></i> Contact
           <% end %>
         </li>
       </ul>
