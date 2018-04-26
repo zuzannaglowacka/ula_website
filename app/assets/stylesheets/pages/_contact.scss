@@ -1,0 +1,26 @@
+.wrapper-contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.parent-contact {
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+}
+
+.child-contact {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left-contact {
+  background-position: center left;
+}
