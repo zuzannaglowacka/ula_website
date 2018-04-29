@@ -1,4 +1,10 @@
-<% @projects.each do |project| %>
-  <h3><%= project.name %></h3>
-  <p><%= project.genre %></p>
-<% end %>
+<div class="wrapper">
+  <div class="cards">
+
+    <% @projects.each do |project| %>
+      <h3><%= project.name %></h3>
+      <p><%= project.genre %></p>
+    <% end %>
+
+  </div>
+</div>
