@@ -1,4 +1,4 @@
-.parallax, .parallax-2 {
+.parallax, .parallax-2, .parallax-3, {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -18,7 +18,11 @@
 }
 .parallax-2 {
   /* The image used */
-  background-image: linear-gradient(to bottom right, rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url("http://res.cloudinary.com/zuziac/image/upload/v1525119167/board-cinema-cinematography-274937.jpg");
+  background-image: linear-gradient(to bottom right, rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url("http://res.cloudinary.com/zuziac/image/upload/v1525114391/parallax-2.jpg");
+}
+.parallax-3 {
+  /* The image used */
+  background-image: linear-gradient(to bottom right, rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url("http://res.cloudinary.com/zuziac/image/upload/v1525128754/timothy-eberly-382663-unsplash.jpg");
 }
 .parallax-content {
   color: $white;
@@ -39,7 +43,7 @@
 }
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1024px) {
-  .parallax, .parallax-2 {
+  .parallax, .parallax-2, .parallax-3 {
       background-attachment: scroll;
   }
 }
