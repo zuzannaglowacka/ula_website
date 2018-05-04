@@ -8,12 +8,16 @@
 <div class="wrapper-cards">
   <div class="container">
     <div class="row">
-      <div class="card">
+      <div class="col-xs-12 col-md-6">
         <% @projects.each do |project| %>
-          <h3><%= project.name %></h3>
-          <p><%= project.genre %></p>
+          <div class="card" style="background-image: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.2)), url(<%= project.photo.url %>);">
+          <div class="card-body">
+            <h3><%= project.name %></h3>
+            <p><%= project.genre %></p>
+          </div>
         <% end %>
       </div>
     </div>
   </div>
 </div>
+
