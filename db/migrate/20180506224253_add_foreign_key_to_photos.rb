@@ -1,5 +1,5 @@
 class AddForeignKeyToPhotos < ActiveRecord::Migration[5.1]
   def change
-    add_foreign_key :photos, :projects
+    add_reference :photos, :project, foreign_key: true, index: true
   end
 end
