@@ -4,17 +4,17 @@
       <h2>MY EDITING WORK</h2>
     </div>
   </div>
-</div>
-<div class="wrapper-cards">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3"">
-        <div class="cards">
+
+  <div id="wrapper">
+    <div class="container">
+      <div class="cards">
+        <div class="courses-box wow slideInDown" data-wow-delay="0.7644388826440165s">
           <% @projects.each do |project| %>
             <div class="card" style="background-image: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.2)), url(<%= cl_image_path project.photos[0].url %>);">
-            <div class="card-body">
-              <h3><%= project.name %></h3>
-              <p><%= project.genre %></p>
+              <div class="card-body">
+                <h3><%= project.name %></h3>
+                <p><%= project.genre %></p>
+              </div>
             </div>
           <% end %>
         </div>
@@ -22,4 +22,3 @@
     </div>
   </div>
 </div>
-

@@ -21,6 +21,8 @@ Photo.create!(url: 'http://res.cloudinary.com/zuziac/image/upload/v1525788470/MV
 p3 = Project.create(name: "Red", genre: 'Drama')
 Photo.create!(url: 'http://res.cloudinary.com/zuziac/image/upload/v1525987606/MV5BMTMzNjQ1Mjc0M15BMl5BanBnXkFtZTcwNDA0NjkxMQ_._V1_.jpg', project: p3)
 
+p4 = Project.create(name: "The Double Life of Veronique")
+Photo.create!(url: 'http://res.cloudinary.com/zuziac/image/upload/v1526671411/MV5BOGYyNDE1YTMtMTg5Mi00NzI2LTg1OWQtNzI1YTYzM2JiNmQ3XkEyXkFqcGdeQXVyNzQ0MTcyMjU_._V1_SY1000_CR0_0_706_1000_AL_.jpg', project: p4)
 
 p "Coding Projects created !"
 
