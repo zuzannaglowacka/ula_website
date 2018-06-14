@@ -9,32 +9,28 @@
 .courses-box {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .card {
+  position: relative;
   height: 300px;
   width: 200px;
-  position: relative;
-  // flex: 0 0 25%;
-  // flex-wrap: wrap;
   background-size: cover !important;
   background-position: center;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  // align-items: center;
+  padding-top: 5px;
 
 }
 
-.card-body {
-  padding: 10px 10px 10px 20px;
+.card-course-name {
+  position: absolute;
+  box-sizing: border-box;
   color: white;
-  transition: 0.3s;
 
   h3 {
     font-size: 18px;
-    margin-bottom: 5px !important;
-  }
-
-  p {
-    font-size: 14px;
+    margin-top: 8px;
   }
 }
