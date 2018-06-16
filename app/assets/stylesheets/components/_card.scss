@@ -1,16 +1,30 @@
-.container {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container {
+    display: block;
+    padding-top: 70px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 70px;
+  }
 }
 
-.courses-box {
+.cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: flex-start;
+
+}
+.courses-box {
+  flex: 0 0 16%;
+  padding-bottom: 20px;
 }
 
 .card {
@@ -18,16 +32,12 @@
   height: 300px;
   width: 200px;
   background-size: cover !important;
-  background-position: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-position: center center;
   padding-top: 5px;
-
 }
 
 .card-course-name {
-  position: absolute;
-  box-sizing: border-box;
-  color: white;
+  color: #1e2729;
 
   h3 {
     font-size: 18px;
