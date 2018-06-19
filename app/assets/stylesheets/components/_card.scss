@@ -36,6 +36,12 @@
   padding-top: 5px;
 }
 
+.card:hover {
+  opacity: 0.5;
+  background-color: white;
+  transition: 0.3s;
+}
+
 .card-course-name {
   color: #1e2729;
 
