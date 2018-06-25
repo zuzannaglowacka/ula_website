@@ -47,12 +47,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.42);
 }
 
 .parent:hover .caption, .parent:focus .caption {
     display: block;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .caption {
@@ -67,7 +67,7 @@
     height: 50px;
     cursor: pointer;
     color: white;
-    font-size: 50px;
+    font-size: 62px;
     font-weight: bold;
 }
 
