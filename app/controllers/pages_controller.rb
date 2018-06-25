@@ -4,4 +4,16 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def blue
+  end
+
+  def white
+  end
+
+  def red
+  end
+
+  def veronique
+  end
 end
