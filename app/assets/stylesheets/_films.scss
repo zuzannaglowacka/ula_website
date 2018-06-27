@@ -22,8 +22,16 @@
 }
 
 .content-film {
-  h1, h2 {
+  h1 {
+    font-size: 31px;
+  }
+
+  h2 {
     font-size: 31px;
     font-weight: 300;
+  }
+
+  p {
+    font-size: 13px;
   }
 }
