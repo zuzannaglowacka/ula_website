@@ -7,7 +7,9 @@
   </div>
 
   <div class="parent">
-    <div class="child right" style='background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.2)), url(<%= image_path 'camera.jpg' %>)'>
+    <%= link_to resume_path do %>
+      <div class="child right" style='background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.2)), url(<%= image_path 'camera.jpg' %>)'>
       <h1 class="caption">View my resumé</h1></div>
+    <% end %>
   </div>
 </div>

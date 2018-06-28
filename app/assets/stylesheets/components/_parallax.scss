@@ -1,4 +1,4 @@
-.parallax, .parallax-2, .parallax-3, {
+.parallax, .parallax-2, .parallax-3, .parallax-4 {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -23,6 +23,10 @@
 .parallax-3 {
   /* The image used */
   background-image: linear-gradient(to bottom right, rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url("http://res.cloudinary.com/zuziac/image/upload/v1525128754/timothy-eberly-382663-unsplash.jpg");
+}
+.parallax-4 {
+  /* The image used */
+  background-image: linear-gradient(to bottom right, rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url("http://res.cloudinary.com/zuziac/image/upload/v1525119167/board-cinema-cinematography-274937.jpg");
 }
 .parallax-content {
   color: $white;
