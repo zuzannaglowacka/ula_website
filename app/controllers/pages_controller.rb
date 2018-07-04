@@ -22,4 +22,8 @@ class PagesController < ApplicationController
 
   def belmondo
   end
+
+  def cyanure
+  end
 end
+
