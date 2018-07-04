@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get 'white', to: 'pages#white'
   get 'red', to: 'pages#red'
   get 'veronique', to: 'pages#veronique'
+  get 'belmondo', to: 'pages#belmondo'
   resources :projects, only: [:index, :show]
 end

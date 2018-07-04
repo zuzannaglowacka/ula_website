@@ -19,4 +19,7 @@ class PagesController < ApplicationController
 
   def veronique
   end
+
+  def belmondo
+  end
 end

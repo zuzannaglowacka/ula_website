@@ -9,9 +9,8 @@
   .container {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -20,15 +19,24 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: flex-start;
-
+  padding-top: 30px;
 }
+
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
 .courses-box {
   flex: 0 0 16%;
   padding-bottom: 20px;
 }
 
 .card {
-  position: relative;
   height: 300px;
   width: 200px;
   background-size: cover !important;
