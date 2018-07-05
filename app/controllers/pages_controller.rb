@@ -25,5 +25,18 @@ class PagesController < ApplicationController
 
   def cyanure
   end
+
+  def marie
+  end
+
+  def central
+  end
+
+  def soil
+  end
+
+  def tout
+  end
 end
+
 

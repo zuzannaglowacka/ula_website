@@ -9,5 +9,9 @@ Rails.application.routes.draw do
   get 'veronique', to: 'pages#veronique'
   get 'belmondo', to: 'pages#belmondo'
   get 'cyanure', to: 'pages#cyanure'
+  get 'marie', to: 'pages#marie'
+  get 'central', to: 'pages#central'
+  get 'soil', to: 'pages#soil'
+  get 'tout', to: 'pages#tout'
   resources :projects, only: [:index, :show]
 end
