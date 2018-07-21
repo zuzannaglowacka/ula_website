@@ -3,31 +3,28 @@ body {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
   .about-content {
     width: 650px;
-    margin-left: 20px !important;
-    margin-right: 20px !important;
-  }
-
-  .txt-left {
-    border-right: 1px solid transparent;
+    margin-left: 25px !important;
+    margin-right: 25px !important;
   }
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) {
+@media only screen and (min-device-width: 768px) {
   .about-content {
-  background: white;
-  padding: 60px;
-  width: 820px;
-  margin: 0 auto;
-  text-align: justify;
+    background: white;
+    padding: 60px;
+    width: 820px;
+    margin: 0 auto;
+    text-align: justify;
   }
 }
 
 .about-flex-item {
+  flex: 0 0 48%;
   margin: 30px 0;
 }
 

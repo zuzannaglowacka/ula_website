@@ -8,8 +8,16 @@
   }
 }
 
-.txt-left {
-  border-right: 1px solid $darker-grey;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .txt-left {
+    border-right: 1px solid transparent !important;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .txt-left {
+    border-right: 1px solid $darker-grey;
+  }
 }
 
 .first-letter {

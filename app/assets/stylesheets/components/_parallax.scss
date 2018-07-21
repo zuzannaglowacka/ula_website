@@ -49,7 +49,7 @@
 }
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1024px) {
-  .parallax, .parallax-2, .parallax-3 {
+  .parallax, .parallax-2, .parallax-3, .parallax-4 {
       background-attachment: scroll;
   }
 }
