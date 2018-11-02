@@ -1,73 +1,151 @@
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  position: relative;
-}
-
-.parent {
-    width: 50vw;
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+  .wrapper {
+    width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    // display: flex;
     position: relative;
-    float: left;
-    display: inline-block;
-    cursor: pointer;
+  }
+
+  .parent {
+      width: 100vw;
+      height: 50vh;
+      overflow: hidden;
+      position: relative;
+      float: left;
+      display: inline-block;
+      cursor: pointer;
+  }
+
+  .child {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: 0.5s;
+  }
+
+  .left {
+    background-position: 90% 50%;
+  }
+
+  .right {
+    background-position: 80% 50%;
+  }
+
+  .parent:hover .child, .parent:focus .child {
+      transform: scale(1.05);
+  }
+
+  .parent:hover .child:before, .parent:focus .child:before {
+      display: block;
+  }
+
+  .child:before {
+      content: "";
+      display: none;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.42);
+  }
+
+  .parent:hover .caption, .parent:focus .caption {
+      display: block;
+      transition: 0.1s;
+  }
+
+  .caption {
+      display: none;
+      text-align: center;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 50px;
+      cursor: pointer;
+      color: white;
+      font-size: 62px;
+      font-weight: bold;
+  }
 }
 
-.child {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.5s;
+@media only screen and (min-width : 1224px) {
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+  }
+
+  .parent {
+      width: 50vw;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      float: left;
+      display: inline-block;
+      cursor: pointer;
+  }
+
+  .child {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: 0.5s;
+  }
+
+  .left {
+    background-position: 90% 50%;
+  }
+
+  .right {
+    background-position: 80% 50%;
+  }
+
+  .parent:hover .child, .parent:focus .child {
+      transform: scale(1.05);
+  }
+
+  .parent:hover .child:before, .parent:focus .child:before {
+      display: block;
+  }
+
+  .child:before {
+      content: "";
+      display: none;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.42);
+  }
+
+  .parent:hover .caption, .parent:focus .caption {
+      display: block;
+      transition: 0.1s;
+  }
+
+  .caption {
+      display: none;
+      text-align: center;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 50px;
+      cursor: pointer;
+      color: white;
+      font-size: 62px;
+      font-weight: bold;
+  }
 }
 
-.left {
-  background-position: 90% 50%;
-}
-
-.right {
-  background-position: 80% 50%;
-}
-
-.parent:hover .child, .parent:focus .child {
-    transform: scale(1.05);
-}
-
-.parent:hover .child:before, .parent:focus .child:before {
-    display: block;
-}
-
-.child:before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.42);
-}
-
-.parent:hover .caption, .parent:focus .caption {
-    display: block;
-    transition: 0.1s;
-}
-
-.caption {
-    display: none;
-    text-align: center;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 50px;
-    cursor: pointer;
-    color: white;
-    font-size: 62px;
-    font-weight: bold;
-}
 
