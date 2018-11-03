@@ -72,7 +72,7 @@
       height: 135px;
       cursor: pointer;
       color: white;
-      font-size: 62px;
+      font-size: 4.6em;
       font-weight: bold;
   }
 }
@@ -81,7 +81,7 @@
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-  .wrapper {
+ .wrapper {
     width: 100vw;
     height: 100vh;
     // display: flex;
@@ -107,11 +107,13 @@
   }
 
   .left {
-    background-position: 90% 50%;
+    background-position: 43% 37%;
+    filter: brightness(80%);
   }
 
   .right {
-    background-position: 80% 50%;
+    background-position: 80% 88%;
+    filter: brightness(69%);
   }
 
   .parent:hover .child, .parent:focus .child {
@@ -135,11 +137,11 @@
 
   .parent:hover .caption, .parent:focus .caption {
       display: block;
-      transition: 0.1s;
+      // transition: 0.1s;
   }
 
   .caption {
-      display: none;
+      // display: none;
       text-align: center;
       margin: auto;
       position: absolute;
@@ -150,7 +152,7 @@
       height: 50px;
       cursor: pointer;
       color: white;
-      font-size: 62px;
+      font-size: 5.4em;
       font-weight: bold;
   }
 }
