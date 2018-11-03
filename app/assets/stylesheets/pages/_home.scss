@@ -24,15 +24,16 @@
       background-size: cover;
       background-repeat: no-repeat;
       transition: 0.5s;
-      // filter: brightness(50%);
   }
 
   .left {
     background-position: 43% 37%;
+    filter: brightness(80%);
   }
 
   .right {
     background-position: 80% 88%;
+    filter: brightness(69%);
   }
 
   .parent:hover .child, .parent:focus .child {

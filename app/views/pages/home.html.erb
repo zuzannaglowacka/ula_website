@@ -2,14 +2,16 @@
   <div class="parent">
     <%= link_to about_path do %>
       <div class="child left" style='background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.2)), url(<%= image_path 'realization.jpg' %>)'>
-        <h1 class="caption">View my website</h1></div>
+    </div>
+    <h1 class="caption">View my website</h1>
     <% end %>
   </div>
 
   <div class="parent">
     <%= link_to resume_path do %>
       <div class="child right" style='background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.2)), url(<%= image_path 'camera.jpg' %>)'>
-      <h1 class="caption">View my resumé</h1></div>
+      </div>
+      <h1 class="caption">View my resumé</h1>
     <% end %>
   </div>
 </div>
