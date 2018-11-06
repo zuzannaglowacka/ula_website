@@ -194,7 +194,7 @@
   }
 
   .container-contact {
-    max-width: 300px;
+    max-width: 47VW;
     // width: 100%;
     margin: 0 auto;
     position: relative;
@@ -241,8 +241,9 @@
   #contact h3 {
     color: black;
     display: block;
-    font-size: 30px;
+    font-size: 3.1em;
     font-weight: 300;
+    margin-bottom: 0.6em;
   }
 
   #contact h4 {
@@ -288,8 +289,8 @@
     background: #ec6964;
     color: #FFF;
     margin: 0 0 5px;
-    padding: 10px;
-    font-size: 15px;
+    padding: 14px;
+    font-size: 2em;
   }
 
   #contact button[type="submit"]:hover {
