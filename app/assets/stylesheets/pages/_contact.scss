@@ -8,7 +8,7 @@
     // position: relative;
   }
 
-  .parent-contact {
+  .parent-contact-left {
     width: 50vw;
     height: 100vh;
     overflow: hidden;
@@ -162,15 +162,24 @@
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .wrapper-contact {
-    width: 100vw;
-    height: 90vh; // Took away 10vh because of navbar height
+    // width: 100vw;
+    // height: 90vh; // Took away 10vh because of navbar height
     // display: flex;
     position: relative;
   }
 
-  .parent-contact {
+  .parent-contact-left {
     width: 100vw;
-    height: 45vh;
+    height: 30vh;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+  }
+
+  .parent-contact-right {
+    width: 100vw;
+    height: 60vh;
     overflow: hidden;
     position: relative;
     float: left;
@@ -235,7 +244,7 @@
 
   #contact {
     // padding: 25px;
-    margin: 0px 0px;
+    margin: 35px 0px 0px 0px;
   }
 
   #contact h3 {
@@ -332,7 +341,7 @@
     // position: relative;
   }
 
-  .parent-contact {
+  .parent-contact-left .parent-contact-right {
     width: 50vw;
     height: 100vh;
     overflow: hidden;
