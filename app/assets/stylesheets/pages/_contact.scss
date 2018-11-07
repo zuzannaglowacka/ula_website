@@ -30,7 +30,7 @@
     height: 100%;
     width: 100%;
     background-size: cover;
-    background-position: 43% 15%;
+    background-position: 43% 22%;
     background-repeat: no-repeat;
     transition: 0.5s;
   }
@@ -104,7 +104,7 @@
 
   fieldset {
     border: medium none !important;
-    margin: 0 0 8px;
+    margin: 0 0 5px;
     min-width: 100%;
     padding: 0;
     width: 100%;
@@ -138,9 +138,9 @@
     border: none;
     background: #ec6964;
     color: #FFF;
-    padding: 9px;
-    font-size: 2em;
-    font-weight: bold;
+    padding: 7px;
+    font-size: 1.9em;
+    // font-weight: bold;
   }
 
   #contact button[type="submit"]:hover {
