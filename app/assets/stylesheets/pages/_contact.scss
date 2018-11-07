@@ -179,7 +179,7 @@
 
   .parent-contact-right {
     width: 100vw;
-    height: 60vh;
+    height: 50vh;
     overflow: hidden;
     position: relative;
     float: left;
@@ -190,6 +190,7 @@
     height: 100%;
     width: 100%;
     background-size: cover;
+    background-position: 43% 22%;
     background-repeat: no-repeat;
     transition: 0.5s;
   }
